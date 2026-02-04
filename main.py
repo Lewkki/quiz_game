@@ -1,35 +1,18 @@
 print('Welcome to the Quiz Game!')
 
-play = input("Would you like to play?: ").lower()
-correct = 0
+score = 0
+questions = {
+    "What is the name of my beautiful girlfriend?:": "emerson",
+    "What is my favorite fast food?:": "chipotle",
+    "Where do I work?:": "dutch bros"
+}
 
-if play == 'yes':
-
-    print("What is the name of my beautiful girlfriend?:")
-    a1 = input().lower()
-    if a1 == 'emerson':
-        print("Correct!")
-        correct += 1
+for question, answer in questions.items():
+    user_answer = input(question).lower()
+    if user_answer == answer:
+        print('Correct!')
+        score += 1
     else:
-        print("Incorrect!")
+        print('Incorrect!')
 
-    print("What is my favorite fast food?:")
-    a2 = input().lower()
-    if a2 == 'chipotle':
-        print("Correct!")
-        correct += 1
-    else:
-        print("Incorrect!")
-
-    print("Where do I work?:")
-    a3 = input().lower()
-    if a3 == 'dutch bros':
-        print("Correct!")
-        correct += 1
-    else:
-        print("Incorrect!")
-
-    print(f"You got a score of {correct}/3")
-
-else:
-    print("Have an amazing day!")
+print(f"Thank you for playing! You're final score was ({score}/3)!")
