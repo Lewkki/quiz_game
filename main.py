@@ -1,3 +1,5 @@
+import random
+
 print('Welcome to the Quiz Game!')
 
 questions = {
@@ -13,7 +15,12 @@ while True:
         score = 0
         question_num = 1
 
-        for question, answer in questions.items():
+        keys = list(questions.keys())
+        random.shuffle(keys)
+
+        for question in keys:
+            answer = questions[question]
+
             print(f'Question {question_num} of {len(questions)}')
             user_answer = input(question).lower().strip()
 
