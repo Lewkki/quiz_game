@@ -3,6 +3,13 @@
 A beginner-friendly command-line quiz game built in Python.
 This project is designed to grow over time, starting from a simple version and gradually adding more features as I improve my coding skills.
 
+## 📦 Project Status
+
+This project is currently frozen.
+
+The goal of this project was to practice Python fundamentals, program flow, input validation, and incremental versioning.  
+No further features are planned at this time, though it may be revisited in the future for refactoring or expansion.
+
 # 📌 Version History
 
 ### v1.0
@@ -33,6 +40,13 @@ This project is designed to grow over time, starting from a simple version and g
 - Introduced use of the `random` module
 - Improved replay variety without changing core gameplay
 
+### v1.4
+
+- Added option for the player to choose how many questions to answer
+- Implemented input validation for numeric user input
+- Limited quiz length using list slicing
+- Improved game flow and error handling
+
 # 🧠 What I’ve Learned So Far
 
 - Using dictionaries to store structured data
@@ -48,6 +62,13 @@ This project is designed to grow over time, starting from a simple version and g
 - Shuffling data using `random.shuffle()`
 - Separating data storage from data execution flow
 - Debugging logical errors in loops and iteration
+- Validating user input to prevent runtime errors
+- Safely converting user input from strings to integers
+- Using `continue` to control loop flow intentionally
+- Slicing lists to limit iteration (`list[:n]`)
+- Combining multiple condition checks for cleaner logic
+- Designing small features without breaking existing functionality
+- Debugging logic and control-flow issues in loops
 
 # 🎯 Goal of This Project
 
